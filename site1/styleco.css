@@ -1,0 +1,625 @@
+body{
+    min-width: 327px;
+    margin: 0 auto;
+    font-family: "Arial";
+}
+a{
+    text-decoration: none;
+}
+header .verh{
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 49px;
+    background: url("noise.jpg");
+}
+header .verh h2{
+    color: #ddd;
+    font-weight: normal;
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+header .verh h2:first-child{
+    float: left;
+}
+.golyb{
+    color: #00abbd;
+    font-weight: bold;
+}
+header .verh h2:last-child{
+    float: right;
+}
+header .verh a:hover{
+    border-bottom: 1px dotted #00abbd;
+}
+header .niz {   
+    display: inline-block;
+    height: 49px;
+    width: 100%;
+    font-size: 0px;
+}
+header .niz div{
+    height: 49px;
+}
+header .niz a{
+    display: inline-block;
+    width: 50px;
+    height: 49px;
+    background-image: url("sprite-mobile.png");
+    background-size: 100px 500px;
+}
+header .niz .w1{
+    width: 71px;
+}
+header .niz .w2{
+    width: 61px;
+}
+header .niz .w3{
+    width: 80px;
+}
+header .niz .left{
+    float: left;
+}
+header .niz .left a{
+    border-right: 1px solid #ddd;
+}
+header .niz .right{
+    float: right;
+}
+header .niz .right a{
+    border-left: 1px solid #ddd;
+}
+header .niz .left .glas{
+    background-position: center -300px;
+}
+header .niz .left .glas:hover{
+    background-position: center -350px;
+}
+header .niz .left .poloski{
+    background-color: #00abbd;
+    background-image: url("sprite.png");
+    background-size: 980px 3200px;
+    background-repeat: no-repeat;
+    background-position: -71px 0;
+}
+header .niz .left .poloski:hover{
+    background-position: -71px -50px;
+}
+header .niz .left .strelleft{
+    background-image: url("sprite.png");
+    background-size: 980px 3200px;
+    background-repeat: no-repeat;
+    background-position: -130px 0;
+}
+header .niz .left .strelleft:hover{
+    background-position:  -130px -49px;
+}
+header .niz .left .strelright{
+    background-image: url("sprite.png");
+    background-size: 980px 3200px;
+    background-repeat: no-repeat;
+    background-position:  -182px -0px;
+}
+header .niz .left .strelright:hover{
+    background-position: -182px -49px;
+}
+header .niz .right .twi{
+    background-position: center 0;
+}
+header .niz .right .twi:hover{
+    background-position: center -50px;
+}
+header .niz .right .face{
+    background-position: center -100px;
+}
+header .niz .right .face:hover{
+    background-position: center -150px;
+}
+header .niz .right .mail{
+    background-position: center -200px;
+}
+header .niz .right .mail:hover{
+    background-position: center -250px;
+}
+.menushka{
+    height: 470px;
+    padding: 30px 45px 0px 45px;
+    background: #004f52;
+}
+.menushka a{
+    padding-top: 4px;
+    display: block;
+    color: white;
+    height: 36px;
+    text-transform: uppercase;
+    font-size: 30px;
+    border-bottom: 1px dotted black;     
+}
+.menushka a:first-child{
+    border-top: 1px dotted black;
+}
+.menushka a:hover{
+    color:  #00abbd;
+}
+
+.main{
+    height: 712px;
+    background: url("bg-sas-pow-what-if-the-next-wave-never-comes.jpg") no-repeat center center;
+    background-size: cover;
+    min-width: 327px;
+}
+.main h1{
+    position: absolute;
+    margin-top: 80px;
+    display: block;
+    width: 100%;
+    min-width: 327px;
+    height: 156px;
+    background: url("protect-our-waves-petition.png") center 0 no-repeat;
+}
+.main .nishoseroye{
+    position: absolute;
+    margin-top: 230px;
+    color: #caccc0;
+    width: 86%;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.5em;
+    line-height: 1em;
+    text-transform: uppercase;
+    padding: 21px 7% 36px 7%;
+}
+.main form{
+    position: absolute;
+    margin-top: 310px;
+    width: 100%;
+    text-align: center;
+    height: 302px;
+}
+.main form input{
+    text-align: center;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: rgba(164,167,146,0.8);
+    border: none;
+    width: 300px;
+    height: 36px;
+    padding-top: 2px;
+    color: initial;
+    font-size: 20px;
+    outline: none;
+    ::-webkit-input-placeholder{
+    color:black;
+    }
+}
+::-webkit-input-placeholder{
+    color:black;
+}
+:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+.main form input:hover{
+    background: #A3A692;
+}
+.main input[type="submit"]{
+    background: #00abbd;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 20px;
+}
+.main input[type="submit"]:hover{
+    background: #221E20;
+}
+.main input[type="checkbox"]{
+    height: 15px;
+    width: 15px;
+}
+.main .melk{
+    min-width: 320px;
+    font-size: 12px;
+    color: #caccc0;
+}
+.main .melk a{
+    color: white;
+    border-bottom: 1px dotted white;
+    text-decoration: none;
+}
+.main .melk a:hover{
+    color: #00abbd;
+    border-bottom: 1px dotted black;
+}
+.nizmain{
+    background: url("paint.png") center bottom no-repeat;
+    margin-top: -22px;
+    height: 22px;
+    width: 100%;
+}
+.container{
+    padding: 40px 10%;
+}
+.container .leftart{
+    float: left;
+    padding: 0 4% 30px 0;
+    width: 45%;
+    border-right: 1px dotted lightgrey;
+}
+.container .clearfix{
+    clear: both;
+}
+.container .leftart h1{
+   text-indent: -99999px;
+   text-transform: uppercase;
+   font-size: 2.3em;
+   background: url("sprite.png") no-repeat  0 -200px;
+   display: block;
+   height: 41px;
+   margin: 0;
+   margin-bottom: 30px;
+}
+.container .leftart span{
+    font-weight: normal;
+}
+.container .leftart > div{
+    margin: 20px 0 0 0;
+    color: black;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 22px;
+}
+.container .leftart .first{
+    font-size: 22px;
+}
+.container .leftart .links{
+    border-top: 5px solid black;
+}
+.container .leftart .links h3{
+    margin-bottom: 10px;
+}
+.container .leftart .links a{
+    display: block;
+    padding: 5px 0;
+    color: black;
+    border-top: 1px dotted lightgray;
+}
+.container .leftart .links a:hover{
+    color: #00abbd;
+}
+.container .leftart .links a div{
+    float: right;
+    height: 20px;
+    width: 20px;
+    background-image: url("sprite.png");
+    background-size: 980px 3200px;
+    background-repeat: no-repeat;
+    background-position:  -200px -15px;
+}
+.container .leftart .links a:hover div{
+    background-position: -200px -64px; 
+}
+.container .leftart .links a:last-child{
+    font-style: italic;
+    color: #00abbd;
+    border-bottom: 1px dotted lightgray;
+}
+.container .leftart .links a:last-child:hover{
+    color: black;
+}
+.container .rightart{
+    float: right;
+    width: 45%;
+    padding: 0 0 40px 4%;
+}
+.container .rightart .links a{
+    vertical-align: top;
+    padding: 5px 0 5px 25px;
+    height: 10px;
+    color: white;
+    display: inline-block;
+    border-radius: 2px;
+    border-width: 1px;
+    font-size: 10px;
+    background-image: url("icon.jpg");
+    background-repeat: no-repeat;
+}
+.container .rightart .links a:nth-child(1){
+    background-color: #1E95DE;
+    width: 35px;
+    margin-right: 8%;
+    float: left;
+    background-position: 2px 3px;
+}
+.container .rightart .links a:nth-child(2){
+    width: 7px;
+    border: 1px solid lightgrey;
+    background-color: white;
+    margin-right: 2%;
+    background-position: -113px 3px;
+}
+.container .rightart .links a:nth-child(3){
+    width: 39px;
+    background-color: #4267b2;
+    background-position: -165px 3px;
+}
+.container .rightart .links a:nth-child(4){
+    width: 58px;
+    background-color: #bd081c;
+    float: right;
+    background-position: -379px 3px;
+}
+.container .rightart .art{
+    line-height: 18px;
+    margin-top: 30px;
+    padding: 20px 5px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+}
+.container .rightart .art span{
+    margin-top: 15px;
+    display: block;
+    font-style: italic;
+    font-size: 16px;
+    font-weight: normal;
+    color: #231f20;
+}
+.container .rightart .art span a{
+    color: #231f20;
+}
+.container .rightart .art span a:hover{
+    color: #00abbd;
+}
+.container .rightart .img{
+    margin-top: 30px;
+    height: 650px;
+    background: url("sas-pow-what-if-the-next-wave-never-comes-3.jpg") no-repeat center 0;
+    background-size: cover;
+}
+
+footer{
+    height: 150px;
+    background: url("noise.jpg");
+    padding: 30px;
+}
+footer .join{
+    height: 32px;
+    width: 600px;
+}
+footer .join a{
+    display: inline-block;
+    height: 32px;
+    margin-right: 20px;
+    text-transform: uppercase;
+    color: #DCDCDC;
+    font-size: 1.6em;
+    font-weight: bold;
+}
+footer .join a:hover{
+    color: #00abbd;
+}
+
+footer .join a:first-child{
+    color: #00abbd;
+}
+footer .join a:first-child:hover{
+    border-bottom: 1px dotted #00abbd;
+}
+
+footer .imgs{
+    float: right;
+    margin-right: 30px;
+    width: 225px;
+    height: 51px;
+}
+footer .imgs a:first-child{
+    margin-top: 9px;
+    display: inline-block;
+    width: 110px;
+    height: 42px;
+    background: url("sprite.png") no-repeat;
+    background-position: -800px -100px;
+}
+footer .imgs a:last-child{
+    display: inline-block;
+    width: 110px;
+    height: 42px;
+    background: url("sprite.png") no-repeat;
+    background-position: -775px 0;
+}
+footer .infa{
+    width: 80%;
+    margin-top: 35px;
+    color: #666;
+    font-size: 10px;
+    line-height: 14px;
+}
+footer .infa a{
+    color: #999;
+}
+footer .infa a:hover{
+    color:  #00abbd;
+}
+
+
+@media only screen and (max-width: 940px){
+    .propad1{
+        display: none;
+    }
+    footer .imgs{
+        display: none;
+    }
+}
+@media only screen and (max-width: 840px){
+    .main{
+        height: 662px;
+    }
+    .container{
+        padding: 40px;
+    }
+    .container .leftart{
+        border: none;
+        float: none;
+        width: 100%;
+        padding: 0;
+    }
+    .container .rightart{
+        float: none;
+        width: 100%;
+        margin-top: 30px;
+        padding: 0;
+    }
+    .container .rightart .img{
+        height: 800px;
+    }
+    footer{
+        height: 230px;
+    }
+    footer .join{
+        width: 220px;
+        height: 120px;
+        margin-top: -5px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    footer .join a{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    footer .join a:first-child{
+        width: 70px;
+    }
+    footer .infa{
+        margin: 30px auto 0 auto;
+        width: 70%;
+    }
+    footer .infa div{
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 700px){
+    .propad2{
+        display: none;
+    }
+}
+@media only screen and (max-width: 610px){
+    footer{
+        height: 150px;
+    }
+    footer .join{
+        height: 32px;
+        width: 100%;
+}
+    footer .join a{
+        display: inline-block;
+        height: 32px;
+        margin-right: 20px;    
+    }
+    footer .infa{
+        position: static;
+        width: 100%;
+        margin: 40px 0 0 0;
+    }
+    footer .infa div{
+        width: 100%;
+        text-align: left;
+    }
+}
+@media only screen and (max-width: 591px){
+    .main form{
+        margin-top: 330px;
+    }
+}
+@media only screen and (max-width: 558px){
+    .main{
+        height: 684px;
+    }
+}
+@media only screen and (max-width: 480px){
+    .propad3{
+        display: none;
+    }
+    header .niz .left .strelleft{
+        display: none;
+    }
+    header .niz .left .strelright{
+        display: none;
+    }
+    header .niz .right .twi{
+        border: none;
+    }
+    .menushka{
+        height: 340px;
+        padding: 15px 20px 0px 20px;
+    }
+    .menushka a{
+        height: 25px;
+        font-size: 20px;
+    }
+    .main{
+        height: 624px;
+    }
+    .main h1{
+        height: 116px;
+        background-size: 476px 116px;
+    }
+    .main .nishoseroye{
+        margin-top: 190px;
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        min-width: 327px;
+    }
+    .main form{
+        min-width: 327px;
+        height: 282px;
+        margin-top: 290px;
+    }
+    .container .leftart h1{
+        background: none;
+        margin-bottom: 10px;
+        text-indent: 0;
+    }
+    .container{
+        width: 85%;
+        padding: 20px 7.5%;
+    }
+    .container .leftart .first{
+        font-size: 20px;
+    }
+    footer{
+        height: 270px;
+    }
+    footer .join{
+        width: 220px;
+        height: 120px;
+        margin-top: -5px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    footer .join a{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    footer .join a:first-child{
+        width: 70px;
+    }
+    footer .infa{
+        width: 80%;
+        margin: 30px auto 0 auto;
+    }
+    footer .infa div{
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 350px){
+    .main form{
+        height: 295px;
+    }
+}
