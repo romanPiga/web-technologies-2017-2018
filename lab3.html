@@ -1,0 +1,127 @@
+<!DOCTYPE>
+<html lang = "en">
+    <head>
+        <title>api github</title>
+        <meta charset="utf-8">
+         <style>
+             body{
+                 font-size: 18px;
+                 font-family: 'Arial', sans-serif;
+             }
+             h1{
+                 margin-left: 40px;
+             }
+             form{
+                 margin: 0 0 0 40px;
+             }
+             main{
+                 margin: 40px 0 40px 40px;
+                 width: 300px;
+             }
+             img{
+                 border-radius: 10px;
+             }
+             h2{
+                 margin-bottom: 0;
+                 font-size: 32px;
+             }
+             .login{
+                 color: lightslategrey;
+                 font-size: 24px;
+             }
+             p{
+                 color: lightslategrey;
+             }
+             .company{
+                 margin-top: 30px;
+             }
+             section{
+                 margin-top: 30px;
+                 margin-bottom: 30px;
+             }
+             section div{
+                 padding: 5px 0 5px 40px;
+                 
+                 height: 25px;
+             }
+             .company{
+                 background: url('prev.jpg') no-repeat 0px -5px;
+                 font-weight: bold;
+             }
+             .location{
+                 background: url('prev.jpg') no-repeat 0px -42px;
+             }
+             section a{
+                 display: block;
+                 margin-top: 5px; 
+                 padding-left: 40px;
+                 text-decoration: none;
+                 color: lightskyblue;
+             }
+             .mail{
+                  background: url('prev.jpg') no-repeat 0px -80px;
+             }
+             .blog{
+                 margin-top: 12px;
+                  background: url('prev.jpg') no-repeat 0px -116px;
+             }
+             .error{
+                 margin-left: 40px;
+             }
+             .log{
+                 color: red;
+                 font-weight: bold;
+             }
+         </style>
+    </head>
+    <body>
+        <h1>Получение информации о пользователе github</h1>
+        <form id="searchName">
+            <input type="text" id="sea" placeholder="Введите логин">
+            <input type="submit" value="Найти">
+        </form>
+        <div id="output"></div>
+        
+        <script> 
+            document.getElementById('searchName').addEventListener('submit', searchName);
+            function searchName(e){
+                e.preventDefault();
+                let zapr = document.getElementById('sea').value;
+                fetch('https://api.github.com/users/'+zapr)
+                        .then((res) => res.json())
+                        .then((data) => {
+                            let output = '';
+                            if(data.message){
+                                output+=`
+                                    <span class="error"><span class="log">*</span>Пользователь с логином "<span class="log">${zapr}</span>" не найден</span>
+                                `
+                            }
+                            else{
+                                let pyst = 'Не указано';
+                                if(data.bio===null) data.bio = pyst;
+                                if(data.company===null) data.company = pyst;
+                                if(data.location===null) data.location = pyst;
+                                if(data.email===null) data.email = pyst;
+                                if(data.blog===null) data.blog = pyst;
+                                output+=`
+                                <main>
+                                   <img src="${data.avatar_url}" height="300" width="300">
+                                   <h2>${data.name}</h2>
+                                   <span class="login">${data.login}</span>
+                                   <p>${data.bio}</p>
+                                   <hr>
+                                   <section>
+                                   <div class="company">${data.company}</div>
+                                   <div class="location">${data.location}</div>
+                                   <a class="mail" href="${data.email}">${data.email}</a>
+                                   <a class="blog" href="${data.blog}">${data.blog}</a>
+                                   </section>
+                                </main>
+                                `;
+                            }   
+                            document.getElementById('output').innerHTML = output;
+                        })  
+            }
+        </script>
+    </body>
+</html>
