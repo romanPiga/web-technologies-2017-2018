@@ -1,0 +1,24 @@
+{
+  "name": "lab7",
+  "version": "1.0.0",
+  "description": "lab7",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --exec babel-node server/app.js"
+  },
+  "author": "romanPiga",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "dotenv": "^6.1.0",
+    "joi": "^13.7.0",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-2": "^6.24.1",
+    "nodemon": "^1.18.4"
+  },
+  "devDependencies": {
+    "eslint": "^5.7.0",
+    "prettier": "1.14.3"
+  }
+}
